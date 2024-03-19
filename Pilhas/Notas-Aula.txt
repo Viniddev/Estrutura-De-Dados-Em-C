@@ -1,0 +1,28 @@
+(*) -> Operador de derreferência; (objeto apontado por)
+(&) -> Endereço de Memória;
+
+(->) -> Operador seta permite acessar a propriedade da apontada de um ponteiro
+        quando o mesmo indica um struct;
+
+
+
+A operação vazia verifica se o topo e o fundo apontam para o mesmo endereço de memoria
+
+
+
+* o metodo vazia verifica se existe algum conteúdo na lista.
+
+* o metodo push empilha um item:
+    recebemos um valor de item e a nossa pilha por referência.
+    alocamos um struct de celula auxiliar.
+    o item que está no topo da pilha vai receber x;
+    o proximo do auxiliar vai receber o topo;
+    o topo vai receber o auxiliar e o tamanho é aumentado;
+
+* o metodo POP remove um item:
+    verificamos se a pilha está vazia.
+    criamos um pont q temporario.
+    o 'q' recebe o topo da pilha.
+    o 'q' recebe o q->prox->item.
+    depois realizamos o free no 'q'.
+    diminuimos o tamanho da pilha e retornamos 0.
